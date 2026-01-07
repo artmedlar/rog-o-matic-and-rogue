@@ -1,0 +1,8 @@
+# Rog-O-Matic terminal definition for controlling Rogue
+rg|rterm|Rog-O-Matic terminal:\
+	:am:bs:xn:\
+	:co#80:li#24:\
+	:ce=\E^S:cl=^L:cm=\Ea%+ %+ :\
+	:so=\ED:se=\Ed:\
+	:pt:ta=^I:up=\E;:db:
+

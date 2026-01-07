@@ -1,0 +1,9 @@
+#!/usr/bin/expect -f
+# Run Rog-O-Matic with a proper PTY
+
+set timeout 300
+log_user 1
+
+spawn ./rogomatic -w
+interact
+
