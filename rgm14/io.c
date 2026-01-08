@@ -246,6 +246,9 @@ int   onat;                             /* 0 ==> Wait for waitstr
         row--;
         break;
 
+      case 7:  /* BEL - bell character, ignore it */
+        break;
+
       default: 
         if (ch < ' ')
         { saynow ("Unknown character '\\%o'--more--", ch);
@@ -272,6 +275,9 @@ int   onat;                             /* 0 ==> Wait for waitstr
 
 done:
   if (botprinted) terpbot ();
+  
+  /* Parse any message on screen line 0 (rogue-clone doesn't always use --More--) */
+  if (screen[0][0] != ' ') terpmes ();
 
   if (atrow != atrow0 || atcol != atcol0) 
   { updateat ();	/* Changed position, record the move */

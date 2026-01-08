@@ -879,24 +879,26 @@ void versiondep (void)
 getmonhist (monster, hitormiss)
 char *monster;
 int hitormiss;
-{ if (cosmic || blinded)
-  { return (findmonster ("it")); }
+{ /* Use addmonhist instead of findmonster to auto-learn monster names
+   * from combat messages. This allows learning without the / command. */
+  if (cosmic || blinded)
+  { return (addmonhist ("it")); }
   else
   { if (streq (monster, "it") && hitormiss)
     { if (version < RV53A)
       { if (! seemonster ("invisible stalker")) beingstalked=INVHIT;
-        return (findmonster ("invisible stalker"));
+        return (addmonhist ("invisible stalker"));
       }
       else
       { if (! seemonster ("phantom")) beingstalked=INVHIT;
-	return (findmonster ("phantom"));
+	return (addmonhist ("phantom"));
       }
     }
     else
     { if (version < RV52B && streq (monster, "invisible stalker") &&
           ! seemonster (monster))
 	beingstalked = INVHIT;
-      return (findmonster (monster));
+      return (addmonhist (monster));
     }
   }
 }
