@@ -38,20 +38,25 @@ xcode-select --install
 # ncurses is included with macOS
 ```
 
-### Build Rogue
+### Build Both Projects
 
 ```bash
-cd rogue
+# From the top-level directory
+make
+
+# Or clean and rebuild
 make clean
 make
 ```
 
-### Build Rog-O-Matic
+### Build Individually
 
 ```bash
-cd rgm14
-make clean
-make
+# Rogue only
+make rogue
+
+# Rog-O-Matic only  
+make rogomatic
 ```
 
 ## Running Rog-O-Matic
