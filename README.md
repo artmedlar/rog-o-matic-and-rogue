@@ -12,10 +12,12 @@ Rog-O-Matic is an AI that plays the classic dungeon-crawling game Rogue. It was 
 
 ## Source Origins
 
-| File | Source | Description |
-|------|--------|-------------|
-| `rgm14.tar.Z` | [CMU AI Repository](https://www.cs.cmu.edu/afs/cs/project/ai-repository/ai/areas/games/rogue/rgm14/) | Original Rog-O-Matic XIV source (1985) |
-| `rogue-libc5-ncurses.zip` | [Roguelike Restoration Project](https://github.com/Davidslv/rogue) | Rogue-clone source |
+Both original source archives are available from [The Roguelike Archive](https://britzl.github.io/roguearchive/):
+
+| File | Description |
+|------|-------------|
+| `rgm14.tar.Z` | Original Rog-O-Matic XIV source (CMU, 1985) |
+| `rogue-libc5-ncurses.zip` | Rogue 5.3 Clone source (Tim Stoehr) |
 
 ## Directory Structure
 
