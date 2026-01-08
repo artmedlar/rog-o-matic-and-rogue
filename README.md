@@ -248,6 +248,6 @@ Rogue-Clone: Public domain / BSD-style license
 
 ## References
 
-- [Rog-O-Matic: A Belligerent Expert System](https://www.cs.cmu.edu/~mmv/papers/RogOMatic.pdf) - Original paper
+- [Rog-O-Matic: A Belligerent Expert System](https://www.cs.princeton.edu/~appel/papers/rogomatic.html) - Original paper (1984)
 - [Rogue (video game) - Wikipedia](https://en.wikipedia.org/wiki/Rogue_(video_game))
 
